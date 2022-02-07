@@ -12,7 +12,7 @@ const delta = 1 / 60
 const lac = 2,
 	per = 0.5,
 	octaves = 8,
-	seed = 0,
+	seed = random(),
 	scale = 400,
 	offset = { x: 1000, y: 1000, z: 1000 }
 noise.seed(seed)
