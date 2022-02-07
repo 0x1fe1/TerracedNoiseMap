@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Template</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.main {
+				position: absolute;
+				inset: 0;
+				margin: auto;
+
+				width: 100%;
+				height: 100%;
+
+				background-color: black;
+
+				display: grid;
+				place-items: center;
+			}
+
+			.cnv {
+				box-shadow: 0 0 2px 1px hsla(0, 0%, 50%, 1);
+			}
+		</style>
+
+		<script defer src="noise.js"></script>
+		<script defer src="functions.js"></script>
+		<script defer src="Objects.js"></script>
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<div class="main">
+			<canvas class="cnv"></canvas>
+		</div>
+	</body>
+</html>
