@@ -53,7 +53,7 @@ class NoiseMap {
 				let a = (this.values[i][j].a + ((this.values[i][j].a * terraceHeight) % 1)) / 2
 				if (this.values[i][j].a === 1) a = 1
 
-				const c = `rgba(${r * 255}, ${g * 255}, ${b * 255}, 1)` //`rgba(${rb ? r * 255 : 0}, ${gb ? g * 255 : 0}, ${bb ? b * 255 : 0}, ${ab ? a * 255 : 0})`
+				const c = `rgba(${r * 255}, ${g * 255}, ${b * 255}, ${a})` //`rgba(${rb ? r * 255 : 0}, ${gb ? g * 255 : 0}, ${bb ? b * 255 : 0}, ${ab ? a * 255 : 0})`
 				fill(c)
 				stroke(c)
 				rectMode('CORNER')
